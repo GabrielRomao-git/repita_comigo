@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         
+
+        var n1_ = 0;
+        var n2_ = 0;
+        
+    
+        function numero1(){
+
+         var n1 = parseInt(prompt("Dígite um valor"));
+
+         n1_ += n1;
+
+          numero2();
+
+        }
+        function numero2(){
+
+        var n2 = parseInt(prompt("Dígite um segundo valor"));
+
+            if (n2 <= 0 || isNaN(n2)) {
+
+            alert("Você não pode escolher um valor menor ou igual á 0!!");
+
+            numero2();
+
+         } else {
+
+            n2_ += n2;
+
+             resultado();
+            }
+            
+
+        } function resultado() {
+            var divisao = n1_ /n2_;
+
+            alert("O resultado da divisão é  " + divisao);
+        }
+        
+        numero1();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
