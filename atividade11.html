@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var dentro = 0;
+        var fora = 0;
+         var x = [];
+                
+            for(var i = 0; i<10;i++){
+                var n1 = parseInt(prompt("Escolha um número."));
+                x[i] =n1;
+            }
+
+        for(var i=0;i<x.length;i++){
+            if(x[i] <24 || x[i] >42)
+                fora++;
+        else {
+            dentro++;
+            
+        }};
+        
+        document.write("<strong>Dentro</strong> dos limites tivemos " + dentro + "<br><br>" +" <br> <strong>Fora</strong> dos limites tivemos " + fora);
+
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
